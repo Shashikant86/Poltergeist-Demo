@@ -18,12 +18,12 @@ Then /^I should see "([^"]*)" in a link$/ do |text|
 end
 
 Given /^I am on "([^"]*)"$/ do |path|
-                     visit path
-                   end
+ visit path
+end
 
 When /^I fill in "([^"]*)" with "([^"]*)"$/ do |element, text|
-                                     fill_in element, with: text
-                                   end
+ fill_in element, with: text
+end
 
 When /^I click "([^"]*)"$/ do |element|
   click_on element
