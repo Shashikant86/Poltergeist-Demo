@@ -7,9 +7,7 @@ Feature: Viewer visits the Home Page
 
 Scenario: View home page
   Given I am on the home page
-  Then I should see "SHASHI'S FIRST RUBY APP"
+  When I fill in "q" with "shashi"
+  Then I should see "Google"
  
-Scenario: Find the link to the form
-  Given I am on the home page
-  Then I should see "Sign up for our newsletter!" in a link
  		
