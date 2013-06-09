@@ -12,10 +12,12 @@ Then(/^I should see "(.*?)"$/) do |text|
   #puts page.driver.cookies
   #page.response_headers.to_a
 
+
 end
 
 When /^I fill in "([^"]*)" with "([^"]*)"$/ do |element, text|
  fill_in element, with: text
+ page.driver.debug
 end
 
 
