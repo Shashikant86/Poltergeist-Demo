@@ -2,7 +2,7 @@
 
 Poltergeist is a headess capybara driver based on PhantomJS. This project is a demonstration of Poltergiest driver in your project. 
 
-This demo uses simple sinatra app which has simple web form and once you submit it, it will take you to Thank You page. Well, don't worry about application code at the moment.  
+
 
 ##Pre-requisite 
 
@@ -15,7 +15,12 @@ On Mac : Use HomeBrew. Please note MacPort installtion is not recommended
 On Linux : Download PhantomJS from the official site and add binary to your PATH [ Note 64 bit and 32 bit ]
               
                 $ wget https://phantomjs.googlecode.com/files/phantomjs-1.9.0-linux-x86_64.tar.bz2
-                $ export PATH /path/to/phatomjs/bin 
+
+And create symlink  phantomjs/bin to your /usr/local/bin and /usr/bin
+
+On Ubuntu, you can use basic phantomjs package like this 
+
+                $ sudo apt-get install phantomjs
               
               
 
@@ -34,7 +39,7 @@ You may widh to do bundle update before running cucumber
 
 Now run cucumber to see all the scenario passes using Poltergiest. 
 
-        $ cucumber
+        $ bundle exec cucumber
 
 
 Now , if you got Ruby installed, you may need to check that Ruby version is compabtible with Poltergeist and Capybara version. 
@@ -48,7 +53,7 @@ If you got error then you can download Poltergeist gem by specifying Git reposit
 There are many things you could do with poltergeist like resizing window, taking screenshot, capturing network traffic, response headers, cookie 
 There are few option in the sinatra_step_definition file. You can comment out and see those in action 
 
-         #page.driver.resize(20,30)
+         #page.driver.resize(400,600)
          #page.save_screenshot("/Users/user/Desktop/test.pdf")
          #puts page.within_window
          #puts page.driver.network_traffic
@@ -65,7 +70,9 @@ Take a look at features/Support/env.rb file how options are configured. you can 
                  :js_errors => false,
                  :timeout => 120,
                  :debug => false,
-                 }
+                 :phantomjs_options => ['--load-images=no', '--disk-cache=false'],
+                 :inspector => true,
+
           Capybara::Poltergeist::Driver.new(app, options)
           end
 
