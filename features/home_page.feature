@@ -1,8 +1,8 @@
 
-Feature: Viewer visits the Home Page
-  In order to read the page
-  As a viewer
-  I want to see the home page of my app
+Feature: Google Search to explore poltergiest
+  In order to expolre poltergeist functionality
+  As a capybara and poltergeist user
+  I want to see the if it works on Google search page 
 
 
 Scenario: View home page
