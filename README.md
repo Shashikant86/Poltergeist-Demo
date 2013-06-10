@@ -26,6 +26,8 @@ On Ubuntu, you can use basic phantomjs package like this
 
 #Usage 
 
+Note: You need to have Ruby 1.9.3 and Capybara 2.1.0 for the latest Poltergeist version. Please make sure you have Ruby 1.9.3 and Capybara 2.1.0 for this Demo.
+
 ### Clone the repository 
 
 
@@ -58,7 +60,7 @@ There are few option in the sinatra_step_definition file. You can comment out an
          #puts page.within_window
          #puts page.driver.network_traffic
          #puts page.driver.cookies
-         #page.response_headers.to_a
+         #puts page.response_headers.to_a
          
 ### Customising Poltergeist Options 
 
