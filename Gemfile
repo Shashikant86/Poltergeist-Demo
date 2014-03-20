@@ -1,22 +1,15 @@
 source :rubygems
-
-gem "sinatra"
-gem "shotgun"
-gem 'json'
-gem "capybara"           
+gem "capybara"
 gem "cucumber"
-gem "rspec", :require => "spec"
-gem "parallel_tests", "~> 0.12"
+gem "rspec"
+gem "parallel_tests"
 gem "poltergeist"
-#gem 'poltergeist', :git => 'git://github.com/jonleighton/poltergeist.git'
 gem "selenium-webdriver"
 gem "rest-client"
 gem "json_pure"
-
-
-	
-
-
-
-
-
+gem "cuke_sniffer"
+gem "parallel"
+gem "json"
+gem "rake"
+gem "yard-cucumber"
+gem "redcarpet"
