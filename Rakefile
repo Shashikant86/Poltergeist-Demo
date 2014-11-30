@@ -7,7 +7,7 @@ require 'yard'
 
 
 Cucumber::Rake::Task.new(:cucumber) do |t|
-  t.cucumber_opts = "features --format pretty"
+  t.cucumber_opts = "--format pretty"
 end
 
 YARD::Rake::YardocTask.new(:yard) do |t|
