@@ -5,7 +5,7 @@ rvm:
   - 1.9.3
 
 before_script: 'bundle install'
-script: 'bundle exec rake cucumber'
+script: 'bundle exec cucumber'
 
 branches:
   only:
