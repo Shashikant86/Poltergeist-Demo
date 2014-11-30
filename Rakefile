@@ -1,5 +1,8 @@
 require 'rubygems'
 require 'cucumber'
+require "capybara/cucumber"
+require "rspec"
+require 'capybara/poltergeist'
 require 'cucumber/rake/task'
 require 'parallel'
 require 'json'
