@@ -3,7 +3,7 @@ Given(/^I am on the BBC home page$/) do
 end
 
 When(/^I called network traffic using Poltergeist$/) do
-  
+
 end
 
 

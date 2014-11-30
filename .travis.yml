@@ -2,7 +2,7 @@ language: ruby
 cache: bundler
 
 rvm:
-  - 2.0.0
+  - 1.9.3p194
 
 before_script: 'bundle install'
 script: 'bundle exec rake cucumber'

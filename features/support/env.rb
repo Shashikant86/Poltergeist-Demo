@@ -1,4 +1,4 @@
- 
+
 require "Capybara"
 require "Capybara/cucumber"
 require "rspec"
@@ -18,4 +18,3 @@ Capybara.register_driver :poltergeist do |app|
 
     Capybara::Poltergeist::Driver.new(app, options)
 end
-
